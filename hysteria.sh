@@ -16,3 +16,4 @@ cat <<EOF > config.json
 EOF
 ufw allow 9527
 nohup ./hysteria-linux-amd64 server > hysteria.log 2>&1 &
+ps -ef |grep hy*
